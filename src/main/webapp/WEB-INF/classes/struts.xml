@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="report-package" extends="rest-default">
+    
+   
+    
+        <action name="users"
+                class="com.reportanalysis.action.ReportAction"
+                method="index">
+
+            <result name="success" type="stream">
+                <param name="inputName">fileInputStream</param>
+                <param name="contentDisposition">
+                    attachment;filename="${fileName}"
+                </param>
+                <param name="contentType">
+                    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                </param>
+            </result>
+
+        </action>
+        <action name="reports"
+                class="com.reportanalysis.action.ReportAction"
+                method="show">
+
+            <result name="success" type="stream">
+                <param name="inputName">fileInputStream</param>
+                <param name="contentDisposition">
+                    attachment;filename="${fileName}"
+                </param>
+                <param name="contentType">
+                    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                </param>
+            </result>
+
+        </action>
+
+    </package>
+
+</struts>
