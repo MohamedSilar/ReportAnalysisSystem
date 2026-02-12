@@ -24,11 +24,11 @@ The project follows layered architecture and clean code principles.
 The application follows a standard layered architecture:
 
 Controller Layer (Struts Action)  
-↓  
+
 Service Layer  
-↓  
+  
 Repository Layer (JDBC)  
-↓  
+  
 Database  
 
 ---
