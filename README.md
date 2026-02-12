@@ -1,10 +1,10 @@
-# 📊 ReportAnalysisSystem
+#  ReportAnalysisSystem
 
 ReportAnalysisSystem is a Java-based enterprise web application built using **Struts 2, Servlets, JDBC, and Multithreading** to process and export analytical reports efficiently.
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This system is designed to:
 
@@ -19,7 +19,7 @@ The project follows layered architecture and clean code principles.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The application follows a standard layered architecture:
 
@@ -33,7 +33,7 @@ Database
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Java 8+
 - Struts 2
@@ -48,7 +48,7 @@ Database
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 
 - Multi-threaded report processing using ExecutorService
 - Thread-safe data handling with synchronized collections
@@ -59,7 +59,7 @@ Database
 
 ---
 
-## 🔄 Multithreading Implementation
+##  Multithreading Implementation
 
 The system uses:
 
